@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
+:root {
+    --fonte--principal: 'Raleway', sans- serife;
+
+    --cor--texto: #464646;
+    --cor--fundo: #c9ecf3;
+    --cor--botao: #8bbbf3;
+    --cor--borda: #0b0a0a	;
+    --cor--fundosecundaria:#8bbbf3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor--fundo);
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10% 0% 10%;
+    align-items: center;
+}
+
+.cabecalho_titulo{
+    font-family: var(--fonte--principal);
+    color: var(--cor--texto);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.cabecalho_abas a {
+    text-decoration: none;
+    font-family: var(--fonte--principal);
+    color: var(--cor--texto);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.cabecalho_abas a:hover{
+    background-color: var(--cor--fundosecundaria);
+}
+
+
+.cabecalho_abas{
+    display: flex;
+    gap: 2rem;
+}
+
+.conteudo_apresentacao{
+    padding: 2% 10% 0% 10%;
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.conteudo_apresentacao_texto{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.conteudo_apresentacao_texto_titulo{
+    font-family: var(--fonte--principal);
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--cor--texto );
+}
+
+.conteudo_apresentacao_texto_resumo{
+    font-family: var(--fonte--principal);
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--cor--texto);
+}
+
+.conteudo_apresentacao_texto_links a {
+    font-family: var(--fonte--principal);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--cor--texto);
+    text-decoration: none;
+}
+
+.conteudo_apresentacao_texto_links a:hover{
+    background-color: var(--cor--fundosecundaria);
+}
+
+.conteudo_apresentacao_texto_links{
+    display: flex;
+    gap: 2rem;
+}
+
+.conteudo_apresentacao_foto{
+    width: 10%;
+}
+
+.conteudo_sobremim{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10% 0% 10%;
+    gap: 1rem;
+}
+
+.conteudo_sobremim_titulo{
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--cor--texto);
+}
+
+.conteudo_sobremim_texto{
+    font-family: var(--fonte--principal);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cor--texto);
+}
+
+.conteudo_skills{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 5%;
+}
+
+.conteudo_skills_titulo{
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--cor--texto);
+    text-align: center;
+}
+
+.conteudo_skills_habilidades{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.conteudo_skills_habilidades_html5{
+    background-color: var(--cor--fundosecundaria);
+    width: 9.4rem;
+    height: 9.4rem;
+}
+
+.conteudo_skills_habilidades_html5_imagem{
+    margin-top: 5.9rem;
+    margin-left: 1rem;
+}
+
+.conteudo_skills_habilidades_html5_nome{
+    margin-left: 1rem;
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.conteudo_skills_habilidades_javascript{
+    background-color: var(--cor--fundosecundaria);
+    width: 9.4rem;
+    height: 9.4rem;
+}
+
+.conteudo_skills_habilidades_javascript_imagem{
+    margin-top: 5.9rem;
+    margin-left: 1rem;
+}
+
+.conteudo_skills_habilidades_javascript_nome{
+    margin-left: 1rem;
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.conteudo_skills_habilidades_css{
+    background-color: var(--cor--fundosecundaria);
+    width: 9.4rem;
+    height: 9.4rem;
+}
+
+.conteudo_skills_habilidades_css_imagem{
+    margin-top: 5.9rem;
+    margin-left: 1rem;
+}
+
+.conteudo_skills_habilidades_css_nome{
+    margin-left: 1rem;
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.conteudo_hobbies{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 5%;
+}
+
+.conteudo_hobbies_titulo{
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--cor--texto);
+    text-align: center;
+}
+
+.conteudo_hobbies_tipos{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.conteudo_hobbies_tipo_volei{
+    background-color: var(--cor--fundosecundaria);
+    width: 9.4rem;
+    height: 9.4rem;    
+}
+
+.conteudo_hobbies_tipo_volei_imagem{
+    margin-top: 5.9rem;
+    margin-left: 1rem;   
+}
+
+.conteudo_hobbies_tipo_volei_nome{
+    margin-left: 1rem;
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1rem;   
+}
+
+.conteudo_hobbies_tipo_filmeseseries{
+    background-color: var(--cor--fundosecundaria);
+    width: 9.4rem;
+    height: 9.4rem;    
+}
+
+.conteudo_hobbies_tipo_filmeseseries_imagem{
+    margin-top: 5.9rem;
+    margin-left: 1rem;   
+}
+
+.conteudo_hobbies_tipo_filmeseseries_nome{
+    margin-left: 1rem;
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1rem;   
+}
+
+.conteudo_hobbies_tipo_musica{
+    background-color: var(--cor--fundosecundaria);
+    width: 9.4rem;
+    height: 9.4rem;    
+}
+
+.conteudo_hobbies_tipo_musica_imagem{
+    margin-top: 5.9rem;
+    margin-left: 1rem;   
+}
+
+.conteudo_hobbies_tipo_musica_nome{
+    margin-left: 1rem;
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1rem;   
+}
+
+.conteudo_formacao{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 5%;
+}
+
+.conteudo_formacao_titulo{
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--cor--texto);
+    text-align: center;
+}
+
+.conteudo_formacao_cursos{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.conteudo_formacao_cursos_pucpr{
+    background-color: var(--cor--fundosecundaria);
+    width: 16.75rem;
+    height: 15.44rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2%;
+}
+
+.conteudo_formacao_cursos_pucpr_imagem{
+    width: 12rem;
+    height: auto;
+}
+
+.conteudo_formacao_cursos_pucpr_titulo{
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1.37rem;
+    color: var(--cor--texto);
+}
+
+.conteudo_formacao_cursos_pucpr_texto{
+    font-family: var(--fonte--principal);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--cor--texto);
+}
+
+.conteudo_formacao_cubos{
+    background-color: var(--cor--fundosecundaria);
+    width: 16.75rem;
+    height: 15.44rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2%;
+}
+
+.conteudo_formacao_cubos_imagem{
+    width: 12rem;
+    height: auto;  
+}
+
+.conteudo_formacao_cubos_titulo{
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1.38rem;
+    color: var(--cor--texto);
+}
+
+.conteudo_formacao_cubos_texto{
+    font-family: var(--fonte--principal);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--cor--texto);
+}
+
+.conteudo_formacao_cursos_alura{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor--fundosecundaria);
+    width: 18.75rem;
+    height: 18.75rem;
+    gap: 1rem;
+    padding-left: 2%;
+}
+
+.conteudo_formacao_cursos_alura_imagem{
+    width: 12rem;
+    height: auto;
+}
+
+.conteudo_formacao_cursos_alura_titulo{
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1.375rem;
+    color: var(--cor--texto);
+}
+
+.conteudo_formacao_cursos_alura_texto{
+    font-family: var(--fonte--principal);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--cor--texto);   
+}
+
+.conteudo_projetos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 5%;
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
+
+.conteudo_projetos_titulo{
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--cor--texto);
+    text-align: center;
+}
+
+.conteudo_projetos_itens{
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+}
+
+.conteudo_projetos_itens_decodificador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.conteudo_projetos_itens_decodificador_imagem{
+    width: 40rem;
+    height: 20rem;
+}
+
+.conteudo_projetos_itens_decodificador_texto{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo_projetos_itens_decodificador_texto_titulo{
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--cor--texto);
+}
+
+.conteudo_projetos_itens_decodificador_texto_descricao{
+    font-family: var(--fonte--principal);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--cor--texto);
+}
+
+.conteudo_projetos_itens_decodificador_texto_links{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo_projetos_itens_decodificador_texto_links_repositorio{
+    border: 2px solid var(--cor--borda);
+    background-color: var(--cor--botao);
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-family: var(--fonte--principal);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cor--borda);
+}
+
+.conteudo_projetos_itens_decodificador_texto_links_repositorio:hover{
+    color: var(--cor--botao);
+    border: var(--cor--botao);
+    background-color: var(--cor--borda);
+}
+
+.conteudo_projetos_itens_pokedex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.conteudo_projetos_itens_pokedex_texto{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo_projetos_itens_pokedex_texto_titulo{
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--cor--texto);
+}
+
+.conteudo_projetos_itens_pokedex_texto_descricao{
+    font-family: var(--fonte--principal);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--cor--texto);
+}
+
+.conteudo_projetos_itens_pokedex_texto_links{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo_projetos_itens_pokedex_texto_links_repositorio{
+    border: 2px solid var(--cor--borda);
+    background-color: var(--cor--botao);
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-family: var(--fonte--principal);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cor--borda);
+}
+
+.conteudo_projetos_itens_pokedex_texto_links_repositorio:hover{
+    color: var(--cor--botao);
+    border: var(--cor--botao);
+    background-color: var(--cor--borda);
+}
+
+.conteudo_projetos_itens_pokedex_texto_links_demo{
+    border: 2px solid var(--cor--borda);
+    background-color: var(--cor--botao);
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-family: var(--fonte--principal);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cor--borda);
+}
+
+.conteudo_projetos_itens_pokedex_imagem{
+    width: 40rem;
+    height: 20rem;
+}
+
+.conteudo_contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    gap: 2rem;
+}
+
+.conteudo_contatos_titulo{
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--cor--texto);
+}
+
+.conteudo_contatos_texto{
+    font-family: var(--fonte--principal);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--cor--texto);
+    
+}
+
+.conteudo_contatos_formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: var(--fonte--principal);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--cor--texto);
+    background-color: var(--cor--fundosecundaria);
+    padding:  1rem 3rem;
+    width: 30rem;
+}
+
+.conteudo_contatos_formulario_nome{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo_contatos_formulario_email{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo_contatos_formulario_assunto{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo_contatos_formulario_texto{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    font-family: var(--fonte--principal);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cor--texto);
+    padding: 1rem;
+    border: 0;
+}
+
+form input:focus{
+    border-radius: 2rem;
+}
+
+.conteudo_contatos_formulario_texto_mensagem{
+    font-family: var(--fonte--principal);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cor--texto);
+    padding: 1rem;
+    border: 0;  
+}
+
+.conteudo_contatos_formulario_texto_mensagem:focus{
+    border-radius: 2rem;
+}
+
+.conteudo_contatos_formulario_botao{
+    font-family: var(--fonte--principal);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--cor--borda);
+    background-color: var(--cor--botao);
+    border: solid var(--cor--borda);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 15rem;
+}
+
+.conteudo_contatos_formulario_botao:hover{
+    color: var(--cor--botao);
+    border: var(--cor--botao);
+    background-color: var(--cor--borda);
+}
+
+.erro-hidden{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte--principal);
+    font-weight: 500;
+    color: var(--cor--borda);
+    font-size: 1rem;
+}
+
+section.span{
+    font-family: var(--fonte--principal);
+    font-weight: 500;
+    color: var(--cor--borda);
+    font-size: 1rem;
+}
+
+.conteudo_rodape{
+    font-family: var(--fonte--principal);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--cor--texto);
+    padding: 1.4rem 20rem;
+}
